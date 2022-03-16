@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.details.RecipeDetails">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progress_circular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imageview_recipe"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_margin="8dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/textview_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageview_recipe"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="3dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="Recipe details Activity" />
+
+        <TextView
+            android:id="@+id/textview_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_title"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:text="Recipe details Activity" />
+
+        <TextView
+            android:id="@+id/textview_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:text="Apologies! Some error in retrieving the data"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</ScrollView>
